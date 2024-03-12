@@ -68,4 +68,4 @@ the command
  ``` bitbake core-image-minimal ```
  is used in the Yocto Project with Poky to build a specific type of embedded Linux system image.
 
-and it may take a while (may be 2 hours).
+and it may take a while (may be 4 hours).
