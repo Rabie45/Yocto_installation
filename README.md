@@ -15,7 +15,8 @@ in this article we will se how to install Yocto in ubuntu distribution based.
    ``` cd source ```
 
 
- - use the command shown in the documentation (https://docs.yoctoproject.org/2.1/yocto-project-qs/yocto-project-qs.html#yp-resources) 
+ - use the command shown in the documentation (https://docs.yoctoproject.org/2.1/yocto-project-qs/yocto-project-qs.html#yp-resources)
+   
    ![1](https://github.com/Rabie45/Yocto_installation/assets/76526170/dba62a8c-ba33-485a-b102-4c467de6e996)
 
 
@@ -24,6 +25,7 @@ Yocto Project: This is the overarching framework that provides tools, processes,
 Poky: Think of Poky as the reference implementation of the Yocto Project. It serves as a foundation and example, showcasing how to use Yocto Project features. Poky includes essential components)
 
 ``` git clone git://git.yoctoproject.org/poky```
+
 ![image](https://github.com/Rabie45/Yocto_installation/assets/76526170/5678f468-2e31-4dea-a3c8-a9c5228bd46f)
 
 
