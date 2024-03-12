@@ -48,6 +48,7 @@ it must be looks like that
 now you can try to write bitbake to see if it works or not
 
 ``` bitbake -h  ```
+
 ![image](https://github.com/Rabie45/Yocto_installation/assets/76526170/e2af4567-c763-4011-a077-5ccbb7d65f30)
 
 if you got error like that
@@ -60,6 +61,7 @@ this is because you use python 3 which have deprecated functions so you have to 
 the last step is to run this command to build
 
 ```bitbake core-image-minimal ```
+
 ![image](https://github.com/Rabie45/Yocto_installation/assets/76526170/cbc37d71-825d-4633-b5cf-c57ccd4f4249)
 
 the command
