@@ -54,11 +54,19 @@ now you can try to write bitbake to see if it works or not
 if you got error like that
 
 ```traceback (most recent call last): File “/home/rabi3/Desktop/source/poky/bitbake/bin/bitbake”, line 19, in <module> import bb File “/home/rabi3/Desktop/source/poky/bitbake/lib/bb/init.py”, line 74, in <module> import bb.msg File “/home/rabi3/Desktop/source/poky/bitbake/lib/bb/msg.py”, line 20, in <module> import bb.event File “/home/rabi3/Desktop/source/poky/bitbake/lib/bb/event.py”, line 23, in <module> import bb.compat File “/home/rabi3/Desktop/source/poky/bitbake/lib/bb/compat.py”, line 7, in <module> from collections import MutableMapping, KeysView, ValuesView, ItemsView, OrderedDict ImportError: cannot import name ‘MutableMapping’ from ‘collections’ (/usr/lib/python3.10/collections/init.py) ```
+you can use this command 
 
 
 this is because you use python 3 which have deprecated functions so you have to use old distro with python 2.7 and this mentioned in the documentation
+use this command 
+
+```  sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1 ```
+
+it would make python2.7.1 as default
 
 the last step is to run this command to build
+
+
 
 ```bitbake core-image-minimal ```
 
@@ -67,5 +75,12 @@ the last step is to run this command to build
 the command
  ``` bitbake core-image-minimal ```
  is used in the Yocto Project with Poky to build a specific type of embedded Linux system image.
+
+if you got this issue 
+
+![image](https://github.com/Rabie45/Yocto_installation/assets/76526170/7e7143e6-bf1b-46ee-8983-7818c6f8d1f6)
+
+use this command 
+``` sudo apt-get install zstd lz4 ```
 
 and it may take a while (may be 4 hours).
